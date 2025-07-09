@@ -1,0 +1,209 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Encabezado */
+header {
+    background: #5a2c00; /* Marrón oscuro para la pastelería */
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #7b4f2c 3px solid;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #ffd700; /* Dorado para el hover */
+    font-weight: bold;
+}
+
+/* Sección Hero (Inicio) */
+.hero {
+    min-height: 400px;
+    background: #8b572a url('https://via.placeholder.com/1500x400?text=Fondo+Pasteleria') no-repeat center center/cover; /* Imagen de fondo de pastelería */
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #d4a762; /* Dorado más suave */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #c39a58;
+}
+
+/* Secciones Generales */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about {
+    background: #fff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.products {
+    background: #e0d9cc; /* Un color crema suave */
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contact {
+    background: #fdfdfd;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Grid de Productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    color: #5a2c00;
+    margin-top: 0;
+}
+
+/* Contacto */
+.contact address {
+    margin-top: 20px;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+.map-placeholder {
+    margin-top: 30px;
+    background-color: #eee;
+    height: 450px; /* Altura del mapa */
+    width: 100%;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Asegura que el iframe se mantenga dentro del contenedor */
+}
+
+.map-placeholder iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Pie de Página */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Media Queries para Responsive */
+@media (max-width: 768px) {
+    header h1,
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
